@@ -1,0 +1,344 @@
+#diarymain {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#diarymain .diary-diarylist {
+  width: 100%;
+  height: 100%;
+  padding: 0% 5%;
+  padding-top: 20px;
+}
+
+.diarylist > hr {
+  width: 100%;
+  height: 1.5px;
+  background-color: black;
+  border: none;
+}
+
+.diarylist .diarylist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.diarylist .diarylist-text {
+  color: #1d8eae;
+  font-size: 18px;
+}
+
+.diarylist .diarylist-folder-btn {
+  cursor: pointer;
+  border: white;
+  background-color: white;
+  font-size: 12px;
+  font-family: 'dunggeunmo';
+}
+
+.diarylist .diarylist-box {
+  padding: 5% 1%;
+}
+
+.diarylist .diarylist-folder {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0px;
+}
+
+.diarylist .diarylist-item {
+  display: flex;
+  align-items: center;
+}
+
+.diarylist .diarylist-icon {
+  display: inline;
+  margin-right: 5px;
+}
+
+.diarylist .diarylist-title {
+  font-size: 13px;
+  max-width: 80%;
+  display: inline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.diarylist .diarylistdetail-title {
+  font-size: 13px;
+  font-family: 'dunggeunmo';
+  cursor: pointer;
+}
+
+.diarylist .diarylistdetail-icon {
+  margin-left: 5%;
+}
+
+.diarylist .diarylistdetail-item {
+  font-size: 16px;
+  font-family: 'dunggeunmo';
+}
+
+.diarylist .diaryitem-box {
+  padding: 0 5%;
+}
+
+.diarylist .diaryitem-text {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.diarylist .diaryitem-title {
+  font-size: 13px;
+  display: inline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#diarymain .diarymain-box {
+  height: 100%;
+  padding: 20px 75px;
+}
+
+.diarymain-box .diarymain-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.diarymain-box .diarymain-header-title {
+  font-size: 20px;
+  color: #1d8eae;
+}
+
+.diarymain-box .make-diary-btn {
+  padding: 8px 10px;
+  cursor: pointer;
+  background: rgba(75, 182, 209, 0.87);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'dunggeunmo';
+  font-size: 13px;
+}
+
+.diarymain-box .diarymain-content {
+  height: 73%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+}
+
+.diarymain-box .diarymain-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.diarymain-box .diarymain-content::-webkit-scrollbar-track {
+  background-color: #cccccc;
+  border-radius: 8px;
+}
+
+.diarymain-box .diarymain-content::-webkit-scrollbar-thumb {
+  background-color: #494949;
+  border-radius: 8px;
+}
+
+.diarymain-box .diarymain-item-content {
+  margin: 5px 0px;
+}
+
+.diarymain-box .diarymain-no-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.diary-folder-dialog .folder-dialog-body {
+  background-color: #ffffff;
+  margin: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-radius: 24px;
+
+  width: 570px;
+  height: 400px;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.diary-folder-dialog .folder-dialog-box > p {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.diary-folder-dialog .folder-dialog-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.diary-folder-dialog .folder-dialog-plus-btn {
+  border: transparent;
+  background-color: transparent;
+  font-family: 'dunggeunmo';
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.diary-folder-dialog .folder-dialog-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 300px;
+}
+
+.diary-folder-dialog .folder-dialog-list {
+  border-color: black;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  max-height: 240px;
+  overflow-y: scroll;
+}
+
+.diary-folder-dialog .folder-dialog-list::-webkit-scrollbar {
+  display: none;
+}
+
+.diary-folder-dialog .folder-dialog-item {
+  padding: 15px;
+  border-color: black;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.folder-dialog-btn-div {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 0px 0px;
+}
+
+.diary-folder-dialog .folder-dialog-btn {
+  padding: 8px 10px;
+  cursor: pointer;
+  background: rgba(75, 182, 209, 0.87);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'dunggeunmo';
+  font-size: 13px;
+  width: 100px;
+}
+
+.diary-folder-dialog .folder-dialog-icon {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.diary-folder-dialog .folder-dialog-title {
+  border: none;
+  font-family: 'dunggeunmo';
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.delete-folder-dialog .delete-folder-dialog-body {
+  background-color: #ffffff;
+  margin: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-radius: 24px;
+
+  width: 400px;
+  height: 200px;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-folder-dialog .delete-folder-dialog-text {
+  margin: 5px 0px 30px 0px;
+}
+
+.delete-folder-dialog .delete-folder-delete-btn {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #c33737;
+  border: #a61e00 2px solid;
+  border-radius: 5px;
+  color: white;
+  font-family: 'dunggeunmo';
+  font-size: 15px;
+  margin-right: 30px;
+  width: 100px;
+}
+
+.delete-folder-dialog .delete-folder-cancel-btn {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #c4c4c4;
+  border: #bfbebe 2px solid;
+  border-radius: 5px;
+  color: white;
+  font-family: 'dunggeunmo';
+  font-size: 15px;
+  width: 100px;
+}
+
+@media (min-width: 1600px) {
+  .diarylist .diarylist-text {
+    font-size: 21px;
+  }
+
+  .diarylist .diarylist-folder-btn {
+    font-size: 14px;
+  }
+
+  .diarylist .diarylist-header {
+    margin-bottom: 18px;
+  }
+
+  .diarylist .diarylist-title {
+    font-size: 13px;
+    max-width: 80%;
+    display: inline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .diarylist .diarylist-title {
+    font-size: 16px;
+  }
+
+  .diarylist .diaryitem-title {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+
+  .diarylist .diarylist-item {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,105 @@
+.photo-edit {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-edit .photo-edit-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.photo-edit .photo-edit-box .edit-info-box {
+  width: 90%;
+  height: 85%;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo-edit .photo-edit-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.photo-edit-header input {
+  width: 300px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 8px;
+  font-family: 'dunggeunmo';
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.photo-edit-header input:focus {
+  outline: 2px solid rgba(75, 182, 209, 0.87);
+}
+
+.photo-edit-header .private-btn {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.photo-edit .photo-edit-img {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-edit img {
+  width: 80%;
+  height: 75%;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.photo-edit .photo-edit-btn {
+  width: 260px;
+  height: 50px;
+  background: rgba(75, 182, 209, 0.87);
+  border-radius: 16px;
+  margin-top: 15px;
+  border: none;
+  font-family: 'dunggeunmo';
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 1600px) {
+  .photo-edit-header input {
+    width: 380px;
+    height: 45px;
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
+  .photo-edit-header .private-btn {
+    width: 120px;
+    height: 50px;
+    margin-right: 35px;
+    font-size: 16px;
+  }
+}

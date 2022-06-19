@@ -1,0 +1,35 @@
+#navigation {
+  position: absolute;
+  right: -80px;
+  top: 40px;
+  z-index: 1;
+}
+
+#navigation > a {
+  font-size: 13px;
+  padding: 12px 12px;
+  margin-bottom: 8px;
+  background: #1d8eae;
+  border: 2px solid rgba(34, 34, 34, 0.8);
+  box-sizing: border-box;
+  border-radius: 0px 9px 9px 0px;
+  text-align: center;
+  color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1600px 이상일 경우 적용되는 코드 */
+@media (min-width: 1600px) {
+  #navigation {
+    right: -98px;
+    top: 60px;
+  }
+
+  #navigation > a {
+    font-size: 16px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+  }
+}

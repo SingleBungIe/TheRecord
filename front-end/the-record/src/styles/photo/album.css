@@ -1,0 +1,319 @@
+#album {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#album .album-photolist {
+  width: 100%;
+  height: 100%;
+  padding: 0% 5%;
+  margin-top: 20px;
+}
+
+#album .album-btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin: 4% 0 3%;
+}
+
+#album .album-btn {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #e9f2ff;
+  border: 2px solid #848484;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'dunggeunmo';
+  font-size: 13px;
+}
+
+#album .album-btn-icon {
+  margin-right: 5px;
+}
+
+.photolist > hr {
+  width: 100%;
+  height: 1.5px;
+  background-color: black;
+  border: none;
+}
+
+.photolist .photolist-text {
+  color: #1d8eae;
+  font-size: 18px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.photolist .photolist-box {
+  padding: 5% 4%;
+}
+
+.photolist .photolist-item {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+
+.photolist .photolist-icon {
+  display: inline;
+  margin-right: 5px;
+}
+
+.photolist .photolist-title {
+  font-size: 13px;
+  max-width: 50%;
+  display: inline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.photolist .photolist-date {
+  font-size: 11px;
+  max-width: 50%;
+  display: inline;
+  cursor: pointer;
+  color: #4b4b4b;
+  padding-top: 3px;
+}
+
+#photopreview {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+.photopreview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 5%;
+  height: 70%;
+  width: 100%;
+}
+
+.photopreview .preview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.photopreview .preview-img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  margin-bottom: 13px;
+}
+
+.photopreview .preview-title {
+  max-width: 120px;
+  display: inline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #1d8eae;
+}
+
+.photopreview .preview-date {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.preview-pagebtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
+
+.photopreview .preview-arrow-btn {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.photopreview .preview-no-btn {
+  visibility: hidden;
+}
+
+.photobooth-dialog .photobooth-dialog-body {
+  width: 594px;
+  height: 450px;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.photobooth-dialog .photobooth-dialog-title {
+  margin: 4%;
+  font-size: 28px;
+}
+
+.photobooth-dialog .enter-dialog-input {
+  margin: 7% 0 5%;
+  background-color: #e9f2ff;
+  border: 3px solid #848484;
+  line-height: 35px;
+  width: 40%;
+  font-family: 'dunggeunmo';
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.photobooth-dialog .photobooth-dialog-btn {
+  width: 33%;
+  height: 10%;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  background-color: #4eb6d9;
+  border: transparent;
+  border-radius: 5px;
+  font-family: 'dunggeunmo';
+}
+
+.photobooth-dialog .grey-photobooth-dialog-btn {
+  width: 33%;
+  height: 10%;
+  font-size: 15px;
+  color: white;
+  background-color: #a0a0a0;
+  border: transparent;
+  border-radius: 5px;
+  font-family: 'dunggeunmo';
+}
+
+.photobooth-dialog .make-dialog-input-box {
+  position: relative;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.photobooth-dialog .make-dialog-input {
+  margin: 30px 0 0;
+  background-color: #e9f2ff;
+  border: 3px solid #848484;
+  line-height: 35px;
+  width: 100%;
+  font-family: 'dunggeunmo';
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.photobooth-dialog .make-dialog-input-btn {
+  margin-left: 40%;
+}
+
+.photobooth-dialog .photobooth-num-list {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  position: absolute;
+  top: 70px;
+}
+
+.photobooth-dialog .photobooth-num-listitem {
+  background-color: transparent;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  font-family: 'dunggeunmo';
+  font-size: 18px;
+  line-height: 30px;
+  padding-right: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.photobooth-dialog .background-dialog-body {
+  width: 594px;
+  height: 450px;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between !important;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.photobooth-dialog .background-dialog-body .background-color-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+}
+
+.photobooth-dialog .background-color-box canvas {
+  width: 125px;
+  height: 180px;
+  border-radius: 12px;
+  background-color: rgb(194, 225, 255);
+}
+
+
+@media (min-width:1600px) {
+  #album .album-photolist {
+    padding: 0% 7%;
+    margin-top: 30px;
+  }
+
+  #album .album-photolist hr {
+    border: 1px solid black;
+  }
+
+  #album .album-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  
+  #album .album-btn-icon {
+    margin-right: 5px;
+  }
+
+  .photolist .photolist-item {
+    margin: 15px 0px;
+  }
+
+  .photolist .photolist-title {
+    font-size: 15px;
+  }
+  
+  .photolist .photolist-date {
+    font-size: 13px;
+    padding-top: 4px;
+  }
+}

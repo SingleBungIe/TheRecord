@@ -1,0 +1,56 @@
+#photo-deco{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#photo-deco .photolist {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#photo-deco .photo-editor-box{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+#photo-deco .photo-editor-box .upload-btn {
+  position: absolute;
+  left: 100px;
+  margin-top: 8px;
+  width: 180px;
+  height: 40px;
+  margin-bottom: 15px;
+  background: rgba(75, 182, 209, 0.87);
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-family: 'dunggeunmo';
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.tui-image-editor-container {
+  border-radius: 20px;
+}
+
+@media (min-width: 1600px) {
+  #photo-deco .photo-editor-box .upload-btn {
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+  }
+}

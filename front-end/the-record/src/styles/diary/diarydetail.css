@@ -1,0 +1,224 @@
+#diarydetail {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#diarydetail .diary-diarylist {
+  width: 100%;
+  height: 100%;
+  padding: 0% 5%;
+  margin-top: 20px;
+}
+
+#diarydetail .make-diary-btn {
+  padding: 8px 10px;
+  cursor: pointer;
+  background: rgba(75, 182, 209, 0.87);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'dunggeunmo';
+  font-size: 13px;
+}
+
+#diarydetail .diarydetail-box {
+  width: 100%;
+  height: 100%;
+  padding: 20px 75px;
+}
+
+#diarydetail .diarydetail-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.diary-dialog .diary-dialog-body {
+  background-color: #ffffff;
+  margin: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 594px;
+  height: 400px;
+}
+
+.diary-dialog .diary-dialog-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+  font-family: 'dunggeunmo';
+  font-size: 16px;
+}
+
+.diary-dialog .diary-dialog-img {
+  height: 130px;
+  margin-bottom: 10px;
+}
+
+.diarydetail-container {
+  border: solid 3px #dadada;
+  border-radius: 20px;
+  padding: 3% 4%;
+  height: 90%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.diarydetail-container .diaryinfo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.diarydetail-container .diaryinfo-header > input {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: transparent;
+  height: 35px;
+  width: 250px;
+  font-family: 'dunggeunmo';
+  padding-left: 10px;
+}
+
+.diarydetail-container .diaryinfo-header-title {
+  display: inline;
+  color: #1d8eae;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.diarydetail-container .diaryinfo-header-date {
+  display: inline;
+  color: #848484;
+  padding-left: 8px;
+}
+
+.diarydetail-container .diaryinfo-header-btn {
+  border: transparent;
+  background-color: transparent;
+  font-family: 'dunggeunmo';
+  padding: 0 3px;
+  color: #848484;
+  cursor: pointer;
+}
+
+.diarydetail-container .diaryInfo-video {
+  border-radius: 15px;
+}
+
+.diarydetail-container > hr {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dadada;
+  border: none;
+}
+
+.diarydetail-container .diaryinfo-category {
+  display: flex;
+  justify-content: flex-end;
+  color: #848484;
+  font-family: 'dunggeunmo';
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.diarydetail-container .diaryinfo-media {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  object-fit: contain;
+  padding-right: 10px;
+}
+
+.diarydetail-container .diaryinfo-media > img {
+  max-height: 250px;
+}
+
+.diarydetail-container .diaryinfo-update-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diarydetail-container .diaryinfo-update-btn {
+  padding: 8px 10px;
+  cursor: pointer;
+  background: rgba(75, 182, 209, 0.87);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'dunggeunmo';
+  font-size: 13px;
+  float: right;
+  margin-top: 10px;
+}
+
+.diarydetail-container .diaryinfo-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 80%;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.diarydetail-container .diaryinfo-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.diarydetail-container .diaryinfo-content::-webkit-scrollbar-track {
+  background-color: #cccccc;
+  border-radius: 8px;
+  max-height: 10px;
+}
+
+.diarydetail-container .diaryinfo-content::-webkit-scrollbar-thumb {
+  background-color: #494949;
+  border-radius: 8px;
+}
+
+.diarydetail-container .diaryinfo-text {
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 15px;
+  /* background-size: cover;
+  min-height: 100px;
+  background-image: url('../../assets/note.jpg');
+  background-repeat: no-repeat; */
+}
+
+.diarydetail-container .diaryinfo-no-text {
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 15px;
+  background-size: cover;
+}
+
+.diarydetail-container .diaryinfo-content-update {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 78%;
+  padding-right: 10px;
+}
+
+.diarydetail-container .diaryinfo-content-update::-webkit-scrollbar-track {
+  background-color: #cccccc;
+  border-radius: 8px;
+  max-height: 10px;
+}
+
+.diarydetail-container .diaryinfo-content-update::-webkit-scrollbar-thumb {
+  background-color: #494949;
+  border-radius: 8px;
+}

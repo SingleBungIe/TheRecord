@@ -1,0 +1,65 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: ${MYSQL_DATABASE_URL}
+        username: ${MYSQL_DATABASE_USERNAME}
+        password: ${MYSQL_DATABASE_PASSWORD}
+
+    jpa:
+        open-in-view: false
+        hibernate:
+            ddl-auto: validate
+            use-new-id-generator-mappings: false
+        show-sql: true
+        properties:
+            hibernate.format_sql: true
+        database: mysql
+
+    servlet:
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
+
+    mail:
+      host: smtp.gmail.com
+      port: 587
+      username: ${GMAIL_ID}
+      password: ${GMAIL_PW}
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+
+
+logging:
+    level:
+        root: info
+        com.record.the_record: info
+
+openvidu:
+    url: ${OPENVIDU_URL}
+    secret: ${OPENVIDU_SECRET}
+
+cloud:
+  aws:
+    s3:
+      bucket: ${S3_BUCKET}
+    credentials:
+      access-key: ${S3_ACCESSKEY}
+      secret-key: ${S3_SECRET_KEY}
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
+
+
+server:
+  ssl:
+    enabled: true
+    key-store: classpath:the-record.co.kr.p12
+    key-store-password: ${RECORD_SECRET}
+    key-store-type: PKCS12
+    key-alias: ssafy

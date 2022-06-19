@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #494949; /* 스크롤바의 색상 */
+}
+
+*::-webkit-scrollbar-track {
+  background: #cccccc;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'dunggeunmo';
+  src: url('../../assets/DungGeunMo.otf') format('truetype');
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../../assets/background.jpg');
+  font-family: 'dunggeunmo';
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}

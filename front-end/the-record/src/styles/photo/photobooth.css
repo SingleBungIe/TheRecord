@@ -1,0 +1,185 @@
+#photobooth {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+}
+
+#photobooth .bg-white-left .photo-preview-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+#photobooth .bg-white-left .photo-preview-box > p {
+  width: 80%;
+  text-align: left;
+  color: #4bb6d1;
+  margin-bottom: 15px;
+}
+
+#photobooth #session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#photobooth .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#photobooth #video-container {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#photobooth video {
+  height: 290px;
+  object-fit: cover;
+}
+
+#photobooth .take-photo-btn {
+  background: rgba(75, 182, 209, 0.87);
+  border-radius: 12px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  font-family: 'dunggeunmo';
+  color: white;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+#photobooth .disable-photo-btn{
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    font-family: 'dunggeunmo';
+    margin-right: 30px;
+}
+
+#photobooth .finish-photo-btn{
+    background: rgba(75, 182, 209, 0.87);
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    font-family: 'dunggeunmo';
+    color: white;
+    cursor: pointer;
+}
+
+#photobooth .photo-btn-group {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#photobooth #show {
+  position: absolute;
+  top: 0;
+  z-index: -3;
+}
+
+/* photoFrame */
+#photo-frame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#photo-frame .frame-preview-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#photo-frame .frame-preview-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#photo-frame .custom-frame-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#photo-frame .custom-frame-box .color-picker-box {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#photo-frame .custom-frame-box .choose-logo-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#photo-frame .choose-logo-box .logo-check {
+  width: 150px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #4bb6d1;
+}
+
+#photo-frame .choose-logo-box .logo-check .logo-img-box {
+  background-color: rgb(208, 208, 208);
+  border: none;
+  width: 180px;
+  height: 80px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#photo-frame .frame-btn-group {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+
+#photo-frame .frame-btn-group button {
+  background: rgba(75, 182, 209, 0.87);
+  border-radius: 12px;
+  width: 215px;
+  height: 51px;
+  color: white;
+  border: none;
+  font-family: 'dunggeunmo';
+  font-size: 16px;
+  cursor: pointer;
+}

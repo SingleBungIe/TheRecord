@@ -1,0 +1,84 @@
+#home-header {
+  width: 100%;
+  height: 8%;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+#home-header .header-right-container {
+  display: flex;
+  align-items: center;
+  width: 380px;
+  margin-right: 25px;
+}
+
+#home-header .header-right {
+  display: flex;
+}
+
+#home-header 
+.header-right-button, 
+.header-right-button-logout {
+  background-color: transparent;
+  border: none;
+  font-family: 'dunggeunmo';
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#home-header .header-right-button-gomyhome {
+  background-color: transparent;
+  border: none;
+  font-family: 'dunggeunmo';
+  font-size: 13px;
+  cursor: pointer;
+  width: 190px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+#home-header .header-right-button {
+  width: 100px;
+  margin-right: 10px;
+}
+
+#home-header .header-right-button-logout{
+  width: 70px;
+  margin-right: 10px;
+}
+
+
+@media (min-width: 1600px) {
+  #home-header {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  #home-header .header-right-button {
+    margin-left: 5px;
+    font-size: 15px;
+    width: 120px;
+    margin-right: 10px;
+  }
+
+  #home-header .header-right-button-logout {
+    margin-left: 5px;
+    font-size: 15px;
+    width: 70px;
+    margin-right: 10px;
+  }
+
+  #home-header .header-right-container {
+    width: 450px;
+  }
+
+  #home-header .header-right-button-gomyhome {
+    font-size: 15px;
+    padding-right: 25px;
+  }
+}

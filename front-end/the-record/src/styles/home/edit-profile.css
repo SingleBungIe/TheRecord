@@ -1,0 +1,71 @@
+#dialog .edit-profile-dialog-body {
+  width: 594px;
+  height: 478px;
+  border-radius: 24px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#dialog .edit-profile-dialog-body .edit-profile-img {
+  display: flex;
+  flex-direction: column;
+}
+
+#dialog .edit-profile-dialog-body .edit-profile-img > img {
+  width: 240px;
+  height: 150px;
+  object-fit: contain;
+  background-color: rgba(211, 211, 211, 0.515);
+}
+
+#dialog .edit-profile-dialog-body .profileImg-edit-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#dialog .edit-profile-dialog-body button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'dunggeunmo';
+}
+
+#dialog .edit-profile-dialog-body button > img {
+  width: 16px;
+}
+
+#dialog .edit-profile-dialog-body textarea {
+  width: 350px;
+  height: 140px;
+  margin-top: 25px;
+  background: rgba(196, 196, 196, 0.23);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px;
+  font-family: 'dunggeunmo';
+}
+
+#dialog .edit-profile-dialog-body .edit-done-button {
+  width: 170px;
+  height: 45px;
+  margin-top: 35px;
+  background: #4eb6d9;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1600px) {
+}
